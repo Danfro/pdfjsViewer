@@ -1,6 +1,6 @@
 import QtQuick 2.0
 import Ubuntu.Components 1.1
-import Ubuntu.Web 0.2
+import Morph.Web 0.1
 Page {
     property string fileUrl
     property string webviewUrl: "../www/web/viewer.html?file=" + fileUrl
