@@ -3,5 +3,12 @@
   "ignore": [
     "build.sh",
     "package.sh"
-  ]
+  ],
+  "libraries": {
+    "pdf.js": {
+      "template": "custom",
+      "prebuild": "git submodule update --init",
+      "build": "cp -r ${SRC_DIR}/* . && nodejs make generic"
+    }
+  }
 }

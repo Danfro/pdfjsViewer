@@ -1,0 +1,4 @@
+[submodule "libs/pdf.js"]
+	path = libs/pdf.js
+	url = https://github.com/bobo1993324/pdf.js.git
+	branch = UbuntuTouchPdfjsViewer
