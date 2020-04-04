@@ -3,11 +3,15 @@
   "ignore": [
     "libs"
   ],
+  "install_data": {
+    "${PDF_JS_LIB_INSTALL_DIR}/web": "www",
+    "${PDF_JS_LIB_INSTALL_DIR}/build/pdf*.js": "www/build"
+  },
   "libraries": {
     "pdf.js": {
       "template": "custom",
       "prebuild": "git submodule update --init",
-      "build": "cp -r ${SRC_DIR}/* . && nodejs make generic"
+      "build": "cp -r ${SRC_DIR}/* . && nodejs make generic && rm -rf install && mkdir install && cp -rf web build install/"
     }
   }
 }
