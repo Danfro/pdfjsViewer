@@ -1,0 +1,7 @@
+{
+  "template": "pure",
+  "ignore": [
+    "build.sh",
+    "package.sh"
+  ]
+}
