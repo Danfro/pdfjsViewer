@@ -1,8 +1,7 @@
 {
   "template": "pure",
   "ignore": [
-    "build.sh",
-    "package.sh"
+    "libs"
   ],
   "libraries": {
     "pdf.js": {
